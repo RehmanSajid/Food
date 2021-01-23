@@ -108,6 +108,7 @@ header.sticky .navigation li a
     text-decoration: none;
     font-size: 1.0em;
     font-weight: 300;
+
 }
 header.sticky .logo
 {
@@ -115,7 +116,8 @@ header.sticky .logo
 }
 header .navigation li a:hover
 {
-	color: #ff0157;
+	background: #ff0157;
+	padding: 5px 5px;
 }
 section
 {
@@ -156,9 +158,7 @@ section
 }
 .row .col50 .imgBx img
 {
-	position: absolute;
-	top: 0;
-	left: 0;
+	
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -395,18 +395,40 @@ section
 	{
 		display: none;
 	}
+	header .navigation li
+	{   width: 50%;
+		margin: 10px;
+		padding: 10px;
+		border : 1px solid black;
+		border-radius: 10px;
+	    list-style: none;
+	    font-size: 1.6em;
+		text-decoration: none;
+	    color : #fff ;
+	    background: #000;
+        padding: 8px 10px 8px 9px;
+
+	}    
+	
 	header .navigation li a
 	{
-		color: #111;
-		font-size: 1.6em;
-		border-radius: 5px;
-        
-	}
-	header .navigation li a:hover
+		 color : #fff !important;
+		 
+	 }
+	 /*header .navigation li:hover
 	{
-       background: #ff0157;
-       color: #fff;
+       color: #000 !important;
+       background: yellow;
+       padding: 8px 10px;
 	}
+	
+	header .navigation  li a:hover
+	{
+       background: lightyellow;	
+       color: #111 !important;
+       padding: 8px 5px;
+	}*/
+
 	header .navigation.active
 	{
 		width: 100%;
@@ -415,10 +437,10 @@ section
 		top: 68px;
 		left: 0;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: left;
+		align-items: left;
 		flex-direction: column;
-		background: orange;
+		background: black;
 
 	}
 
@@ -513,7 +535,7 @@ section
 @media (max-width: 480px){
 	.banner .content h2
 	{
-    font-size: 3.2em;
+    font-size: 2.2em;
     color: #fff;
     margin-top: 100px;
 }
